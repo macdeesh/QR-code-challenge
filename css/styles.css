@@ -11,68 +11,44 @@ body {
    justify-content: center;
    align-items: center;
    min-height: 100vh;
+   max-width: 400px;
+   box-sizing: border-box;
+   margin: auto;
 }
 
 .QR-container {
   background-color: white;
-  border-radius: 3%;
-  margin: 30% 5%;
+  border-radius: 15px;
+  margin: 2rem;
 }
 
 .image-div {
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .QR-image {
-  width: 100%;
-  margin: auto;
-  border-radius: 5%;
+  width: 300px;
+  /* Do to not use % for border radius */
+  border-radius: 15px;
+}
+
+.text-div {
+  padding: 0 1.5rem;
 }
 
 .QR-heading {
   color: #1f3251;
-  margin-top: 1rem;
-  font-size: 3rem;
-  padding: 0 4rem;
+  font-size: 1.4rem;
+  margin: auto;
 }
 
 .QR-text {
   color: #7b879d;
-  padding: 0 4rem 4rem;
-  font-size: 1.1rem;
-  margin: 1rem;
+  font-size: 1rem;
+  margin: 1rem 0 2rem;
 }
 
-/* Desktop */
-@media (min-width: 750px) {
-
-  .QR-container {
-    width: 20%;
-    margin: 10% auto;
-  }
-
-  .image-div {
-    padding: 0.7rem 0;
-  }
-
-  .QR-image {
-    width: 90%;
-  }
-
-  .text-div {
-    padding: 0.5rem 0;
-  }
-
-  .QR-heading {
-    font-size: 1.1rem;
-    margin: auto;
-    padding: 0 0.7rem;
-  }
-
-  .QR-text {
-    font-size: 0.7rem;
-    margin: auto;
-    padding: 0.5rem 1.5rem 1.6rem;
-  }
-
+.attribution {
+  font-size: 0.75rem;
+  bottom: 2rem;
 }
